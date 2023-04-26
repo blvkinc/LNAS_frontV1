@@ -13,6 +13,7 @@ import { FarmInventoryComponent } from '../business-components/farm-inventory/fa
 import { InventoryComponent } from '../business-components/inventory/inventory.component';
 import { PaymentsComponent } from '../business-components/payments/payments.component';
 import { PlantInventoryComponent } from '../business-components/plant-inventory/plant-inventory.component';
+import { PlantManagementComponent } from 'src/business-components/plant-management/plant-management.component';
 import { SalaryLogComponent } from '../business-components/salary-log/salary-log.component';
 import { StorageComponent } from '../business-components/storage/storage.component';
 import { TransactionLogComponent } from '../business-components/transaction-log/transaction-log.component';
@@ -20,7 +21,8 @@ import { ReportWeeklyComponent } from '../business-components/report-weekly/repo
 import { ReportMonthlyComponent } from '../business-components/report-monthly/report-monthly.component';
 import { ScheduleAssignComponent } from '../business-components/schedule-assign/schedule-assign.component';
 import { ScheduleDisplayComponent } from '../business-components/schedule-display/schedule-display.component';
-
+import { FarmManagementComponent } from 'src/business-components/farm-management/farm-management.component';
+import { EmployeeManagementComponent } from 'src/business-components/employee-management/employee-management.component';
 const routes: Routes = [
   { path: '', redirectTo:"pages-login", pathMatch:'full' },
   { path: 'pages-login', component: PagesLoginComponent },
@@ -43,7 +45,9 @@ const routes: Routes = [
   { path:'report_monthly',component:ReportMonthlyComponent},
   { path:'schedule_assign',component:ScheduleAssignComponent},
   { path:'schedule_display',component:ScheduleDisplayComponent},
-
+  {path: 'plant_management' , component:PlantManagementComponent},
+  {path: 'farm_management' , component:FarmManagementComponent},
+  {path: 'employee_management' , component:EmployeeManagementComponent},
 ];
 
 @NgModule({

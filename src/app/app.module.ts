@@ -25,6 +25,9 @@ import { ReportWeeklyComponent } from '../business-components/report-weekly/repo
 import { ReportMonthlyComponent } from '../business-components/report-monthly/report-monthly.component';
 import { ScheduleDisplayComponent } from '../business-components/schedule-display/schedule-display.component';
 import { ScheduleAssignComponent } from '../business-components/schedule-assign/schedule-assign.component';
+import { PlantManagementComponent } from '../business-components/plant-management/plant-management.component';
+import { FarmManagementComponent } from '../business-components/farm-management/farm-management.component';
+import { EmployeeManagementComponent } from '../business-components/employee-management/employee-management.component';
 
 
 @NgModule({
@@ -53,6 +56,9 @@ import { ScheduleAssignComponent } from '../business-components/schedule-assign/
     ReportMonthlyComponent,
     ScheduleDisplayComponent,
     ScheduleAssignComponent,
+    PlantManagementComponent,
+    FarmManagementComponent,
+    EmployeeManagementComponent,
 
   ],
   imports: [
